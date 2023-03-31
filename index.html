@@ -31,12 +31,18 @@
         h1{
             color: #fff;
         }
-        .time{
+        /* .time{
             color: #fff;
-        }
+        } */
         .sec,
         .tm{
+            max-width: 250px;
             color: rgb(255, 136, 0);
+            font-size: 30pt;
+            
+            border: 2px solid rgb(255, 136, 0);
+            border-radius: 10px;
+            padding: 10px;
         }
         .top{
             width: 100%;
@@ -49,7 +55,9 @@
     <div class="container">
         <h1>Hora actual en RD</h1>
         <br>
-        <p id="hora-actual"></p>
+        <center>
+            <p class="tm" id="hora-actual"></p>
+        </center>
     </div>
     <script>
         function displayTime() {
